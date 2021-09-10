@@ -9,7 +9,6 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.todolist.R
 import com.example.todolist.databinding.ItemTaskBinding
 import com.example.todolist.model.Task
-import java.nio.file.Files.delete
 
 class TaskListAdapter : ListAdapter<Task, TaskListAdapter.TaskViewHolder>(DiffCallback()) {
 

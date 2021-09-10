@@ -10,7 +10,6 @@ import com.example.todolist.extensions.text
 import com.example.todolist.model.Task
 import com.google.android.material.datepicker.MaterialDatePicker
 import com.google.android.material.timepicker.MaterialTimePicker
-import com.google.android.material.timepicker.TimeFormat
 import java.util.*
 
 class AddTaskActivity : AppCompatActivity() {
@@ -36,7 +35,6 @@ class AddTaskActivity : AppCompatActivity() {
     }
 
     private fun insertListeners() {
-        //Botão data
         binding.tilData.editText?.setOnClickListener {
             val datePicker = MaterialDatePicker.Builder.datePicker().build()
             datePicker.addOnPositiveButtonClickListener {
@@ -47,7 +45,6 @@ class AddTaskActivity : AppCompatActivity() {
             datePicker.show(supportFragmentManager, "DATE_PICKER_TAG")
         }
 
-        //Botão hora
         binding.tilHour.editText?.setOnClickListener {
             val timePicker = MaterialTimePicker.Builder().build()
 
@@ -65,7 +62,6 @@ class AddTaskActivity : AppCompatActivity() {
             finish()
         }
 
-        //Botão de adicionar
         binding.btnNewTask.setOnClickListener {
             val task = Task(
                 title = binding.tilTitle.text,
