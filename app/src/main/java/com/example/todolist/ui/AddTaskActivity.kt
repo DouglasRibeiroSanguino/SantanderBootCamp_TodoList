@@ -62,16 +62,25 @@ class AddTaskActivity : AppCompatActivity() {
             finish()
         }
 
-        binding.btnNewTask.setOnClickListener {
-            val task = Task(
-                title = binding.tilTitle.text,
-                date = binding.tilData.text,
-                hour = binding.tilHour.text,
-                id = intent.getIntExtra(TASK_ID, 0)
-            )
-            TaskDataSouce.inserTask(task)
-            setResult(Activity.RESULT_OK)
+        binding.back.setOnClickListener {
             finish()
+        }
+
+        binding.btnNewTask.setOnClickListener {
+            /*Thread(Runnable {
+                Thread.sleep(2000)
+                binding.loading.visibility = View.VISIBLE
+            }).start()*/
+
+                val task = Task(
+                    title = binding.tilTitle.text,
+                    date = binding.tilData.text,
+                    hour = binding.tilHour.text,
+                    id = intent.getIntExtra(TASK_ID, 0)
+                )
+                TaskDataSouce.inserTask(task)
+                setResult(Activity.RESULT_OK)
+                finish()
         }
     }
 

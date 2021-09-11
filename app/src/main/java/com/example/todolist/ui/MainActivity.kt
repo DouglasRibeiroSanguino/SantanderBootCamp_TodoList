@@ -2,16 +2,17 @@ package com.example.todolist.ui
 
 import android.app.Activity
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
+import androidx.appcompat.app.AppCompatActivity
 import com.example.todolist.databinding.ActivityMainBinding
 import com.example.todolist.datasouce.TaskDataSouce
 
 class MainActivity : AppCompatActivity() {
 
     private lateinit var binding:ActivityMainBinding
-    private val adapter by lazy { TaskListAdapter() }
+    private val adapter by lazy { TaskListAdapter()
+    }
 
     override fun onCreate(savedInstanceState:Bundle?) {
         super.onCreate(savedInstanceState)
