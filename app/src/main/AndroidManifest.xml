@@ -12,6 +12,7 @@
         <activity
             android:name=".ui.SplashScreenActivity"
             android:theme="@style/Theme.SplashScreenTheme"
+            android:screenOrientation="portrait"
             android:exported="true">
         <intent-filter>
             <action android:name="android.intent.action.MAIN" />
@@ -21,10 +22,14 @@
 
         </activity>
 
-        <activity android:name=".ui.MainActivity">
+        <activity
+            android:screenOrientation="portrait"
+            android:name=".ui.MainActivity">
         </activity>
 
-        <activity android:name=".ui.AddTaskActivity">
+        <activity
+            android:screenOrientation="portrait"
+            android:name=".ui.AddTaskActivity">
         </activity>
 
     </application>
