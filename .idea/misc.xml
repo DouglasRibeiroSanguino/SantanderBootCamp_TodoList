@@ -3,12 +3,17 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/dougl/SantanderBootCamp_TodoList4/app/src/main/res/drawable/ic_more.xml" value="0.2169230769230769" />
+        <entry key="..\:/Users/dougl/SantanderBootCamp_TodoList4/app/src/main/res/drawable/ic_more_right.xml" value="0.2169230769230769" />
+        <entry key="..\:/Users/dougl/SantanderBootCamp_TodoList4/app/src/main/res/drawable/ic_navigate.xml" value="0.2169230769230769" />
+        <entry key="..\:/Users/dougl/SantanderBootCamp_TodoList4/app/src/main/res/drawable/ic_navigate_next.xml" value="0.2169230769230769" />
         <entry key="..\:/Users/dougl/SantanderBootCamp_TodoList4/app/src/main/res/layout/activity_add_task.xml" value="0.22" />
         <entry key="..\:/Users/dougl/SantanderBootCamp_TodoList4/app/src/main/res/layout/activity_main.xml" value="0.25" />
         <entry key="..\:/Users/dougl/SantanderBootCamp_TodoList4/app/src/main/res/layout/activity_splash_screen.xml" value="0.17916666666666667" />
         <entry key="..\:/Users/dougl/SantanderBootCamp_TodoList4/app/src/main/res/layout/empty_state.xml" value="0.17916666666666667" />
         <entry key="..\:/Users/dougl/SantanderBootCamp_TodoList4/app/src/main/res/layout/item_task.xml" value="0.17916666666666667" />
         <entry key="..\:/Users/dougl/SantanderBootCamp_TodoList4/app/src/main/res/layout/progress_dialog.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/dougl/SantanderBootCamp_TodoList4/app/src/main/res/menu/popup_menu.xml" value="0.1814814814814815" />
         <entry key="..\:/Users/dougl/Todolist/app/libs/src/main/res/menu/popup_menu.xml" value="0.17916666666666667" />
         <entry key="..\:/Users/dougl/Todolist/app/src/main/res/drawable-v24/ic_add.xml" value="0.12037037037037036" />
         <entry key="..\:/Users/dougl/Todolist/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.15185185185185185" />
