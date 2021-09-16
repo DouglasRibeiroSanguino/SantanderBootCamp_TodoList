@@ -1,7 +1,11 @@
 package com.example.todolist.ui
 
 import android.app.Activity
+import android.app.ProgressDialog
 import android.os.Bundle
+import android.os.Handler
+import android.os.Message
+import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 import com.example.todolist.databinding.ActivityAddTaskBinding
 import com.example.todolist.datasouce.TaskDataSouce
@@ -15,6 +19,7 @@ import java.util.*
 class AddTaskActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityAddTaskBinding
+    private lateinit var progressDialog: ProgressDialog
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -67,21 +72,25 @@ class AddTaskActivity : AppCompatActivity() {
         }
 
         binding.btnNewTask.setOnClickListener {
-            /*Thread(Runnable {
-                Thread.sleep(2000)
-                binding.loading.visibility = View.VISIBLE
-            }).start()*/
 
-                val task = Task(
-                    title = binding.tilTitle.text,
-                    date = binding.tilData.text,
-                    hour = binding.tilHour.text,
-                    id = intent.getIntExtra(TASK_ID, 0)
+            progressDialog = ProgressDialog(this)
+            with(progressDialog) {
+                setMessage("Please Wait...")
+                setCancelable(false)
+                show()
+            }
+
+            val task = Task(
+                title = binding.tilTitle.text,
+                date = binding.tilData.text,
+                hour = binding.tilHour.text,
+                id = intent.getIntExtra(TASK_ID, 0)
                 )
                 TaskDataSouce.inserTask(task)
                 setResult(Activity.RESULT_OK)
                 finish()
         }
+
     }
 
     companion object {
